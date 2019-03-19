@@ -18,7 +18,7 @@ public class SoluciuonParcial {
         int tgeneral = 0;
         String stock, precio ;
         Scanner scn = new Scanner(System.in);
-        String [][] matri = new String [10][4];
+        String [][] matri = new String [4][4];
         
         //llenado de la matriz
         for(i = 0; i<matri.length ; i++){
@@ -46,14 +46,14 @@ public class SoluciuonParcial {
 
         }
        //Impresion de la matriz
-        for(i = 0; i< matri.length ; i++){
+        for(i = 0; i<matri.length; i++){
             for(j= 0; j<matri.length; j++){
-           System.out.print("\n\t--- Producto " +(i+1)+":  ");
-           System.out.print(""+matri[i][j]);
+           System.out.println("\n\t--- Producto:  "+matri[i][j]);
+        
             }
         }
          System.out.print("\n\t");
-            System.out.print("\n\t");
+          
             //Impresion del total general
                System.out.print("\n\t--- Total general: "+tgeneral);
         
